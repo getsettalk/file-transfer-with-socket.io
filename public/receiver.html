@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>We-Share: share any files easly</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app">
+        <div class="screen join-sereen active">
+            <div class="form">
+                <h2><span style="color:aliceblue;">Receive</span> Your Files Securely</h2>
+                <p>Peer to Peer File Transfer:</p>
+                <div class="form-input">
+                    <label for="join-id">join id</label>
+                    <input type="text" name="jid" id="join-id" placeholder="XXX-XXX-XXX">
+                </div>
+                <div class="form-input">
+                    <button id="receiver-start-con-btn"> connect to room</button>
+                </div>
+               
+            </div>
+         </div>
+        <div class="screen fs-screen ">
+           
+            <div class="files-list">
+                <div class="title">
+                  
+                    <h5>Shared files will display Here:</h5>
+                    <h5>Ready to Receive...</h5>
+                </div>
+                <!-- <div class="item">
+                    <div class="progress">0%</div>
+                    <div class="filename">Abc.txt</div>
+                </div> -->
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script type="text/javascript" src="rec.js"></script>
+</body>
+</html>

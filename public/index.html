@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>We-Share: share any files easly</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bgclr">
+    <div class="app">
+        <div class="screen join-sereen active">
+         
+            <div class="form">
+                <h2>Share Your Files Securely</h2>
+                <p>Peer to Peer File Transfer:</p>
+                <div class="form-input">
+                    <button id="sender-start-con-btn"> Create room</button>
+                </div>
+                <div class="form-input" id="join-id">
+                    
+                </div>
+                <div class="rcBtn">
+                    <a href="/receiver.html" >Receive File</a>
+                </div>
+            </div>
+         </div>
+        <div class="screen fs-screen ">
+            <div class="file-input">
+                <label for="file-input">
+                    Click here to select file for share
+                </label>
+                <input type="file" name="" id="file-input">
+            </div>
+            <div class="files-list">
+                <div class="title">Shared files
+                    <small>( Must be share file one by one.)</small>
+                </div>
+                <!-- <div class="item">
+                    <div class="progress">0%</div>
+                    <div class="filename">Abc.txt</div>
+                </div> -->
+            </div>
+        </div>
+    </div>
+    <script src="/socket.io/socket.io.js"></script>
+    <script type="text/javascript" src="code.js"></script>
+    <!-- this is built with ❤️ and support of internet by sujeet kumar sharma -->
+</body>
+</html>

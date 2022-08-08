@@ -1,0 +1,246 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: url('https://cdn.wallpapersafari.com/93/20/6Iah3P.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-family: "Roboto", sans-serif;
+    height: 100vh;
+}
+
+button {
+    transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+    transform: scale(1.1);
+}
+
+.screen {
+    display: none;
+}
+
+.screen.active {
+    display: block;
+}
+
+.app {
+    position: fixed;
+    top: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    height: 100%;
+    max-width: 500px;
+    background: #FF5F6D;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #FFC371, #FF5F6D);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #FFC371, #FF5F6D);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    border-right: 1px solid #ddd;
+    border-left: 1px solid #ddd;
+}
+
+.join-sereen .rcBtn {
+    margin-top: 30px;
+
+}
+
+.join-sereen .rcBtn a {
+    border: 1px dashed black;
+    color: rgb(246, 246, 246);
+    border-radius: 30px;
+    font-size: larger;
+    font-weight: 600;
+    text-decoration: none;
+    text-align: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 10px 10px;
+    background: #4776E6;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #8E54E9, #4776E6);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #8E54E9, #4776E6);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.join-sereen .form {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    padding: 50px;
+}
+
+.join-screen .form .form-input {
+    margin: 10px 0px;
+}
+
+.join-sereen .form h2 {
+    font-size: 40px;
+    line-height: 45px;
+    color: #222;
+    margin-bottom: 10px;
+}
+
+.join-sereen .form p {
+
+    color: #222;
+    margin-bottom: 10px;
+}
+
+.join-sereen .form button {
+    background: #111;
+    padding: 10px 20px;
+    font-size: 18px;
+    color: #fff;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.join-sereen .form #join-id b {
+    color: #222;
+    display: block;
+    margin-top: 20px;
+}
+
+.join-sereen .form #join-id span {
+    margin-top: 1px;
+    display: inline-block;
+    font-size: 25px;
+    font-family: monospace;
+    color: #222;
+    padding: 10px;
+    border: 1px solid #111;
+}
+
+.join-sereen .form label {
+    color: #222;
+    font-size: 18px;
+    font-family: monospace;
+    text-transform: capitalize;
+}
+
+.join-sereen .form input {
+    display: block;
+    margin: 10px 0px;
+    width: 100%;
+    max-width: 200px;
+    border: 1px solid #111;
+    color: #111;
+    font-size: 20px;
+    padding: 10px;
+}
+
+/* files items  */
+.fs-screen {
+    padding: 20px;
+}
+
+.fs-screen .file-input {
+    width: 100%;
+    border: 1px dashed #555;
+    cursor: pointer;
+}
+
+.fs-screen .file-input label {
+    width: 100%;
+    display: block;
+    padding: 40px 50px;
+    text-align: center;
+    font-size: 18px;
+    transition: all 0.3s;
+}
+
+.fs-screen .file-input label:hover {
+    background: #7F00FF;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #E100FF, #7F00FF);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #E100FF, #7F00FF);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.fs-screen .file-input input {
+    display: none;
+}
+
+.fs-screen .files-list {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.fs-screen .file-input label {
+    cursor: pointer;
+}
+
+.fs-screen .files-list .title {
+    width: 100%;
+    font-size: 18px;
+    color: #555;
+    margin-left: 20px;
+}
+
+.fs-screen .files-list .item {
+    width: 33.33%;
+    max-width: 200px;
+    border: 1px solid #eee;
+    box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.05);
+
+}
+
+.fs-screen .files-list .item .progress {
+    padding: 30px;
+    text-align: center;
+    font-size: 45px;
+    font-family: monospace;
+    color: #222;
+
+}
+
+.fs-screen .files-list .item .filename {
+    padding: 5px;
+    text-align: center;
+    font-size: 16px;
+    border-top: 1px solid #eee;
+
+}
+
+.fileclr {
+    border-radius: 10px;
+    background: #bdc3c7;
+    border: 1px dotted gray;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #2c3e50, #bdc3c7);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #2c3e50, #bdc3c7);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+@media screen and (max-width:900px) {
+    .fs-screen .files-list .item .progress {
+        font-size: 30px;
+    }
+
+    .fs-screen .files-list .item .filename {
+        font-size: 15px;
+    }
+}
